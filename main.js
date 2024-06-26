@@ -42,14 +42,7 @@ for (let i = 0; i < num; i++){
   instLight.push( Math.PI + (Math.PI * Math.random()), Math.random() + 5);
 }
 instGeom.setAttribute("instPos", new THREE.InstancedBufferAttribute(new Float32Array(instPos), 3));
-instGeom.setAttribute("instSpeed", new THREE.InstancedBufferAttribute(new Float32Array(instSpeed), 1));
-instGeom.setAttribute("instLight", new THREE.InstancedBufferAttribute(new Float32Array(instPos), 2));
-
-var mat = new THREE.ShaderMaterial({
-  uniforms: {
-    uTime: {value: 0},
-    uLight: {value: new THREE.Color("red").multiplyScalar(1.5)},
-    uColor: {value: new THREE.Color("marow").multiplyScalar(1)},
+instGeom.setAttribute("instSpeed", new THREE.Instancmarrow").multiplyScalar(1)},
     uFire: {value: new THREE.Color(1, 0.75, 0)}
   },
   vertexShader:`
