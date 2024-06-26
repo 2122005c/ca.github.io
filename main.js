@@ -48,8 +48,8 @@ instGeom.setAttribute("instLight", new THREE.InstancedBufferAttribute(new Float3
 var mat = new THREE.ShaderMaterial({
   uniforms: {
     uTime: {value: 0},
-    uLight: {value: new THREE.Color("blue").multiplyScalar(1.5)},
-    uColor: {value: new THREE.Color("#8A2BE2").multiplyScalar(1)},
+    uLight: {value: new THREE.Color("red").multiplyScalar(1.5)},
+    uColor: {value: new THREE.Color("marow").multiplyScalar(1)},
     uFire: {value: new THREE.Color(1, 0.75, 0)}
   },
   vertexShader:`
